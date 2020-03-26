@@ -15,10 +15,9 @@
       margin: auto;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 100px);
-      grid-auto-flow: column;  /* changing implicit rows wont work because we changed to columns */
-      grid-auto-rows: 150px; /* change height of implicit rows */
+      grid-template-rows: repeat(4, 100px);
       grid-gap: 1rem;
+      justify-items: center;
     }
     .item {
       font-size: 2rem;
