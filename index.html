@@ -18,12 +18,19 @@
       grid-template-rows: repeat(4, 100px);
       grid-gap: 1rem;
       justify-items: center;
+      align-items: center;
     }
     .item {
       font-size: 2rem;
       background-color: royalblue;
       color: #fff;
       text-align: center;
+    }
+    .item-3 {
+      justify-self: center;
+      align-self: center;
+      grid-row: 2 / 4;
+      grid-column: 1 / -1;
     }
   </style>
 </head>
@@ -32,7 +39,7 @@
   <div class="container">
     <div class="item">Item 1</div>
     <div class="item">Item 2</div>
-    <div class="item">Item 3</div>
+    <div class="item item-3">Item 3</div>
     <div class="item">Item 4</div>
     <div class="item">Item 5</div>
     <div class="item">Item 6</div>
