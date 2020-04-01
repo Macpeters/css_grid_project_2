@@ -3,48 +3,50 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-sscale=1.0">
   <meta http-equiv="X-UA-Compatable" content="ie=edge">
-  <title>CSS Grid</title>
+  <link rel="shortdut icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    .container {
-      width: 600px;
-      background-color: #efefef;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(4, 100px);
-      grid-gap: 1rem;
-      justify-items: center;
-      align-items: center;
-    }
-    .item {
-      font-size: 2rem;
-      background-color: royalblue;
-      color: #fff;
-      text-align: center;
-    }
-    .item-3 {
-      justify-self: center;
-      align-self: center;
-      grid-row: 2 / 4;
-      grid-column: 1 / -1;
-    }
-  </style>
+  <title>Furniture Store</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="container">
-    <div class="item">Item 1</div>
-    <div class="item">Item 2</div>
-    <div class="item item-3">Item 3</div>
-    <div class="item">Item 4</div>
-    <div class="item">Item 5</div>
-    <div class="item">Item 6</div>
-    <div class="item">Item 7</div>
-    <div class="item">Item 8</div>
+    <!-- Navbar -->
+    <ul class="social-icons">
+      <li class="social-icon-item">
+        <a href="" class="social-icon-link"><i class="fab fa-facebook-square social-icon"></i></a>
+      </li>
+      <li class="social-icon-item">
+        <a href="" class="social-icon-link"><i class="fab fa-linkedin social-icon"></i></a>
+      </li>
+      <li class="social-icon-item">
+        <a href="" class="social-icon-link"><i class="fab fa-twitter-square social-icon"></i></a>
+      </li>
+      <li class="social-icon-item">
+        <a href="" class="social-icon-link"><i class="fab fa-instagram social-icon"></i></a>
+      </li>
+    </ul>
+
+    <nav class="first-nav">
+      <ul class="first-nav-list">
+        <li class="first-nav-item">
+          <a href="#" class="first-nav-link"><i class="fas fa-sign-in-alt">Sign Up / Log In</i></a>
+        </li>
+        <li class="first-nav-item">
+          <a href="#" class="first-nav-link"><i class="fas fa-shopping-cart">Cart(<span>2 Items</span>)</i></a>
+        </li>
+        <li class="first-nav-item">
+          <a href="#" class="first-nav-link"><i class="fas fa-truck">Order Now</i></a>
+        </li>
+        <li class="first-nav-item">
+          <a href="#" class="first-nav-link"><i class="fas fa-heart">Wish List</i></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- End Navbar -->
   </div>
 </body>
 
