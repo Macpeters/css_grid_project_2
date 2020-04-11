@@ -14,7 +14,34 @@
 
 <body>
   <!-- Modal -->
-  <input type="checkbox" id="show-hide-forms">
+  <input type="checkbox" id="show-hide-forms" hidden>
+  <div class="forms-wrapper">
+    <label for="show-hide-forms" class="x-btn">&#10005;</label>
+    <input type="checkbox" id="show-form" hidden>
+    <div class="show-btns-wrapper">
+      <label for="show-form" class="show-form-btn show-sign-up-form">Sign Up</label>
+      <label for="show-form" class="show-form-btn show-login-form">Login</label>
+    </div>
+
+    <form class="sign-up-form">
+      <h3 class="form-heading">Sign Up</h3>
+      <div class="fullname-inputs-wrapper">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+      </div>
+      <input type="text" class="form-input" placeholder="Username">
+      <input type="email" class="form-input" placeholder="Email Address">
+      <input type="password" class="form-input" placeholder="Password">
+      <input type="submit" value="SIGN UP" class="form-btn">
+    </form>
+
+    <form class="login-form">
+      <h3 class="form-heading">Login</h3>
+      <input type="email" class="form-input" placeholder="Email Address">
+      <input type="password" class="form-input" placeholder="Password">
+      <input type="submit" value="LOGIN" class="form-btn">
+    </form>
+  </div>
   <!-- End Modal -->
 
   <div class="container">
@@ -37,7 +64,9 @@
     <nav class="first-nav">
       <ul class="first-nav-list">
         <li class="first-nav-item">
-          <a href="#" class="first-nav-link"><i class="fas fa-sign-in-alt">Sign Up / Log In</i></a>
+          <a href="#" class="first-nav-link">
+            <label for="show-hide-forms"><i class="fas fa-sign-in-alt">Sign Up / Log In</i></label>
+          </a>
         </li>
         <li class="first-nav-item">
           <a href="#" class="first-nav-link"><i class="fas fa-shopping-cart">Cart(<span>2 Items</span>)</i></a>
